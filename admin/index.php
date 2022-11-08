@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastrarUsuario.php" method="post">
+    Cadastrar  Usuario
+        <form action="cadastrarUsuario.php" method="post">
         <input type="text" name="usuario" id="">
         <input type="text" name="senha" id="">
         <input type="submit" value="Cadastrar">

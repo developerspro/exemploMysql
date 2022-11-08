@@ -16,7 +16,6 @@ class Dao {
 
     public function logIn($usuario,$senha){
     $resultado = $this->conexao->query("select * from tbusuario where usuario ='$usuario' and senha='$senha'");
-    $retorno = $resultado->fetch();
     if($resultado->fetch()){
         header('location:http://localhost/exemplo1/admin/');
     } else { 
@@ -40,6 +39,7 @@ class Dao {
 
     public function listaUsuario(){
         $resultado = $this->conexao->query('select * from tbusuario');
+
         return $resultado; 
     }
 }
